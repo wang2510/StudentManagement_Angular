@@ -13,6 +13,7 @@ import { NavbarComponent } from './layouts/navbar/navbar.component';
 import { FooterComponent } from './layouts/footer/footer.component';
 import { PageRibbonComponent } from './layouts/profiles/page-ribbon.component';
 import { ErrorComponent } from './layouts/error/error.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
@@ -22,7 +23,8 @@ import { ErrorComponent } from './layouts/error/error.component';
     StudentManagementSysHomeModule,
     // jhipster-needle-angular-add-module JHipster will add new module here
     StudentManagementSysEntityModule,
-    StudentManagementSysAppRoutingModule
+    StudentManagementSysAppRoutingModule,
+    HttpClientModule
   ],
   declarations: [MainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, FooterComponent],
   bootstrap: [MainComponent]
